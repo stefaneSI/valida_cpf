@@ -31,13 +31,11 @@ def valida_cpf(cpf):
 
 def verifica_digitos(cpf):
   if len(cpf) < 11 or len(cpf) > 11:
-    print ('Quantidade de digitos incorreta')
+    print ('Quantidade de digitos incorreta, digite somente números.')
   else:
     digitos_cpf = cpf[0] * len(cpf)
-    print(digitos_cpf)
+    #print(digitos_cpf)
     if digitos_cpf == cpf:
       print('CPF invalido')
       #return false
 
-verifica_digitos('0000000000000')
-valida_cpf('09704762640')
