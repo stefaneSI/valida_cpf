@@ -3,7 +3,7 @@ import valida
 
 app = Flask(__name__)
 
-@app.route('/health')
+@app.route('/')
 def index():
     return render_template('index.html')
 
